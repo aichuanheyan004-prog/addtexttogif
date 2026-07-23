@@ -36,4 +36,10 @@ Launch metrics: Task starts, valid GIF decode, export success/failure reason, ex
 
 Expansion/stop thresholds: Add pages only when GSC or support data shows independent intent. Do not create doorway pages for "free", "online", "animated", or close variants. Stop or merge pages with weak unique value.
 
-Open assumptions: GitHub, Vercel, and DNS authorization may require the user. Current demand was manually reviewed; paid keyword metrics remain estimates.
+Launch status (2026-07-24): Source is published at `https://github.com/aichuanheyan004-prog/addtexttogif` on `main`. The Vercel project is `chun5/addtexttogif`, with `https://www.addtexttogif.net/` as the production canonical host. `https://addtexttogif.net/` redirects permanently to the `www` HTTPS host. Namecheap DNS uses `A @ -> 216.198.79.1` and `CNAME www -> 3a0799f503e07012.vercel-dns-017.com.`.
+
+Launch verification: Production build and tests passed, the static SEO audit reported zero findings, all four sitemap URLs returned 200, a missing trailing-slash URL resolved to a real 404/noindex page, robots and sitemap matched the canonical host, security headers and immutable asset caching were present, and the production editor loaded and exported the real animated sample. Browser checks covered desktop and a 390 x 844 viewport with no horizontal overflow. No analytics or advertising scripts are installed.
+
+Rollback: Revert or redeploy the last known-good `main` commit in Vercel. DNS can be restored at Namecheap if hosting changes, but stable public URLs and the `www` canonical should be preserved.
+
+Open assumptions: DNS caches and certificate visibility may continue propagating briefly across networks. GSC is not yet verified or submitted. Current demand was manually reviewed; paid keyword metrics remain estimates.
