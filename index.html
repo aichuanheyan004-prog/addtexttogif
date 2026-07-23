@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add Text to GIF Online - Browser Local GIF Caption Editor</title>
+    <meta
+      name="description"
+      content="Add text to an animated GIF in your browser. Upload a GIF, add multiple text layers, choose frame ranges, preview, and download an animated GIF without uploading your file."
+    />
+    <link rel="canonical" href="https://www.addtexttogif.net/" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <meta name="robots" content="index,follow" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Add Text to GIF Online" />
+    <meta
+      property="og:description"
+      content="A browser-local animated GIF caption editor with multiple text layers, frame ranges, preview, and export."
+    />
+    <meta property="og:url" content="https://www.addtexttogif.net/" />
+    <meta property="og:image" content="https://www.addtexttogif.net/og-image.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Add Text to GIF Online" />
+    <meta
+      name="twitter:description"
+      content="Add captions or labels to animated GIFs locally in your browser."
+    />
+    <meta name="twitter:image" content="https://www.addtexttogif.net/og-image.jpg" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "AddTextToGif.net",
+        "url": "https://www.addtexttogif.net/",
+        "applicationCategory": "MultimediaApplication",
+        "operatingSystem": "Web",
+        "browserRequirements": "A modern browser with Canvas, File, Blob, and Web Worker support.",
+        "description": "A browser-local editor for adding multiple text layers to animated GIF files and exporting an animated GIF.",
+        "softwareHelp": "https://www.addtexttogif.net/how-to/",
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD"
+        },
+        "featureList": [
+          "Upload animated GIF files",
+          "Preview decoded frames",
+          "Add multiple text layers",
+          "Set text style and frame ranges",
+          "Export an animated GIF in the browser"
+        ]
+      }
+    </script>
+    <link rel="stylesheet" href="/src/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="/" aria-label="AddTextToGif.net home">
+        <span class="brand-mark" aria-hidden="true">GIF</span>
+        <span>AddTextToGif.net</span>
+      </a>
+      <nav class="top-nav" aria-label="Primary navigation">
+        <a href="/how-to/">How-to</a>
+        <a href="/privacy/">Privacy</a>
+        <a href="/terms/">Terms</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="tool-intro" aria-labelledby="home-title">
+        <div class="intro-copy">
+          <p class="eyebrow">Browser-local animated GIF editor</p>
+          <h1 id="home-title">Add Text to GIF</h1>
+          <p>
+            Upload an animated GIF, add captions or labels on selected frames, preview the animation,
+            and download a GIF result. The editor runs in this browser; your GIF, filename, text,
+            and output are not uploaded by this site.
+          </p>
+          <p class="rights-note">
+            Use it only with GIFs you own or have permission to edit.
+          </p>
+        </div>
+      </section>
+
+      <section class="editor-band" aria-label="GIF editor">
+        <div id="tool-root" class="tool-root">
+          <div class="editor-loading" role="status">Loading the local GIF editor...</div>
+        </div>
+      </section>
+
+      <section class="content-grid" aria-labelledby="tool-details">
+        <div>
+          <h2 id="tool-details">What This Tool Does</h2>
+          <p>
+            AddTextToGif.net is built for the common "add text to animated GIF" task. You can place
+            more than one text layer, choose colors, outline, shadow, background, opacity, alignment,
+            and apply each layer to all frames or a specific frame range.
+          </p>
+          <p>
+            The export keeps the original canvas size and animation timing within the tested browser
+            limits shown in the editor. A safe built-in sample GIF is provided so you can try the
+            workflow without using someone else's media.
+          </p>
+        </div>
+        <div>
+          <h2>How It Works</h2>
+          <ol class="clean-list">
+            <li>Choose a GIF file or load the sample GIF.</li>
+            <li>Add or edit text layers and drag the selected layer in the preview.</li>
+            <li>Set the start and end frames for captions that should appear only part of the time.</li>
+            <li>Export and download the animated GIF from your browser.</li>
+          </ol>
+          <p>
+            For a step-by-step walkthrough, read the <a href="/how-to/">how-to guide</a>.
+          </p>
+        </div>
+        <div>
+          <h2>Privacy and Limits</h2>
+          <p>
+            Processing is local to your browser. The site does not create public output pages, store
+            your text, or send image data to a server. Browser memory still matters, so very large,
+            very long, or heavily detailed GIFs may be rejected with a clear error.
+          </p>
+        </div>
+        <div>
+          <h2>Supported Output</h2>
+          <p>
+            The downloaded file is an animated GIF. The encoder uses a 256-color GIF palette per frame,
+            so photographic GIFs may show normal GIF color reduction. Text layers are rendered into the
+            final animation.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>AddTextToGif.net</span>
+      <a href="/privacy/">Privacy</a>
+      <a href="/terms/">Terms</a>
+      <a href="/how-to/">How-to</a>
+    </footer>
+
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
