@@ -1,32 +1,34 @@
 {
-  "name": "addtexttogif",
-  "version": "0.1.0",
-  "private": true,
-  "type": "module",
-  "scripts": {
-    "dev": "vite --host 127.0.0.1",
-    "build": "vite build",
-    "preview": "vite preview --host 127.0.0.1",
-    "test": "vitest run",
-    "typecheck": "tsc --noEmit",
-    "make:sample": "node scripts/make-sample-gif.mjs",
-    "make:og": "node scripts/make-og-image.mjs",
-    "check": "npm run typecheck && npm run test && npm run make:og && npm run build"
-  },
-  "dependencies": {
-    "gifenc": "^1.0.3",
-    "gifuct-js": "^2.1.2",
-    "lucide-react": "^1.26.0",
-    "react": "^19.2.8",
-    "react-dom": "^19.2.8"
-  },
-  "devDependencies": {
-    "@types/node": "^26.1.1",
-    "@types/react": "^19.2.17",
-    "@types/react-dom": "^19.2.3",
-    "@vitejs/plugin-react": "^6.0.4",
-    "typescript": "^7.0.2",
-    "vite": "^8.1.5",
-    "vitest": "^4.1.10"
-  }
+    "name":  "addtexttogif",
+    "version":  "0.1.0",
+    "private":  true,
+    "type":  "module",
+    "scripts":  {
+                    "dev":  "vite --host 127.0.0.1",
+                    "build":  "vite build",
+                    "preview":  "vite preview --host 127.0.0.1",
+                    "test":  "vitest run",
+                    "typecheck":  "tsc --noEmit",
+                    "make:sample":  "node scripts/make-sample-gif.mjs",
+                    "make:og":  "node scripts/make-og-image.mjs",
+                    "check":  "npm run typecheck \u0026\u0026 npm run test \u0026\u0026 npm run make:og \u0026\u0026 npm run build",
+                    "indexnow":  "node scripts/submit-indexnow.mjs",
+                    "indexnow:live":  "node scripts/submit-indexnow.mjs --live"
+                },
+    "dependencies":  {
+                         "gifenc":  "^1.0.3",
+                         "gifuct-js":  "^2.1.2",
+                         "lucide-react":  "^1.26.0",
+                         "react":  "^19.2.8",
+                         "react-dom":  "^19.2.8"
+                     },
+    "devDependencies":  {
+                            "@types/node":  "^26.1.1",
+                            "@types/react":  "^19.2.17",
+                            "@types/react-dom":  "^19.2.3",
+                            "@vitejs/plugin-react":  "^6.0.4",
+                            "typescript":  "^7.0.2",
+                            "vite":  "^8.1.5",
+                            "vitest":  "^4.1.10"
+                        }
 }
